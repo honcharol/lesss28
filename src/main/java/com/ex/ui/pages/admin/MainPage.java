@@ -17,12 +17,13 @@ public class MainPage extends BasePage {
     }
 
     public MainPage clickOnAcceptCookies(){
-        findElement(webDriver,acceptCookies).click();
+        waitForElementClickable(webDriver,acceptCookies).click();
         return this;
     }
 
     @Step("Click on my account link step")
     public LoginPage clickOnMyAccountLink() {
+        waitForElementClickable(webDriver, myAccountLink);
         findElement(webDriver, myAccountLink).click();
         log.info("Click on my account link STEP");
         return new LoginPage(webDriver);

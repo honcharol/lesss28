@@ -7,6 +7,7 @@ public class SecondSuite extends BaseTest {
     @Test
     public void testLoginForm2() {
         new MainPage(webDriver.get(), "https://www.gurock.com/testrail/")
+                .clickOnAcceptCookies()
             .clickOnMyAccountLink()
             .inputEmail("qwertyasd@mailforspam.com")
             .inputPassword("Gol19121211_nvbg")
