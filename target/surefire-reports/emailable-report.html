@@ -9,57 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite1</th></tr>
-<tr><td><a href="#t0">Regression</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">7,919</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Regression</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">16,952</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ex.ui.FirstSuite</td><td><a href="#m0">testLoginForm</a></td><td rowspan="1">1669313059875</td><td rowspan="1">3011</td></tr><tr class="failedodd"><td rowspan="1">com.ex.ui.SecondSuite</td><td><a href="#m1">testLoginForm2</a></td><td rowspan="1">1669313061138</td><td rowspan="1">2951</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ex.ui.FirstSuite</td><td><a href="#m0">testLoginForm</a></td><td rowspan="1">1669574343744</td><td rowspan="1">14003</td></tr><tr class="failedodd"><td rowspan="1">com.ex.ui.SecondSuite</td><td><a href="#m1">testLoginForm2</a></td><td rowspan="1">1669574344997</td><td rowspan="1">13443</td></tr></tbody>
 </table>
-<h2>Regression</h2><h3 id="m0">com.ex.ui.FirstSuite#testLoginForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;gk-header-top-menu-link&quot; href=&quot;https://secure.gurock.com/customers/auth/login/&quot;&gt;...&lt;/a&gt; is not clickable at point (702, 15). Other element would receive the click: &lt;div id=&quot;cookiescript_injected&quot; tabindex=&quot;0&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; data-nosnippet=&quot;&quot; class=&quot;&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.110)
+<h2>Regression</h2><h3 id="m0">com.ex.ui.FirstSuite#testLoginForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;email&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;oleh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-53-generic&apos;, java.version: &apos;11.0.17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d21c7cc46079bd2d65c970e00405350d, clickElement {id=ee2a73cb-4d96-4e21-af9f-54f2d69b529d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.mupva3}, goog:chromeOptions: {debuggerAddress: localhost:40277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40277/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (d21c7cc46079bd2d65c970e00405350d)] -&gt; xpath: //a[contains(text(),&apos;My Account&apos;)]]
-Session ID: d21c7cc46079bd2d65c970e00405350d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.ex.ui.pages.admin.MainPage.clickOnMyAccountLink(MainPage.java:20)
-	at com.ex.ui.FirstSuite.testLoginForm(FirstSuite.java:15)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.7XBM9X}, goog:chromeOptions: {debuggerAddress: localhost:36223}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36223/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: da4364c977746f26cbd04fc5c2312557
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.ex.ui.pages.WebHelpers.findElement(WebHelpers.java:21)
+	at com.ex.ui.pages.WebHelpers.findElement(WebHelpers.java:16)
+	at com.ex.ui.pages.admin.LoginPage.inputEmail(LoginPage.java:22)
+	at com.ex.ui.FirstSuite.testLoginForm(FirstSuite.java:17)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ex.ui.SecondSuite#testLoginForm2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;gk-header-top-menu-link&quot; href=&quot;https://secure.gurock.com/customers/auth/login/&quot;&gt;...&lt;/a&gt; is not clickable at point (702, 15). Other element would receive the click: &lt;div id=&quot;cookiescript_injected&quot; tabindex=&quot;0&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; data-nosnippet=&quot;&quot; class=&quot;&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.110)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ex.ui.SecondSuite#testLoginForm2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;email&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;oleh&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-53-generic&apos;, java.version: &apos;11.0.17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a3a6616461108d84e6912090ae748261, clickElement {id=96cd1c5d-dfa2-46ee-bcd1-a2564ffea456}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.jEuUzx}, goog:chromeOptions: {debuggerAddress: localhost:42533}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42533/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (a3a6616461108d84e6912090ae748261)] -&gt; xpath: //a[contains(text(),&apos;My Account&apos;)]]
-Session ID: a3a6616461108d84e6912090ae748261
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.ex.ui.pages.admin.MainPage.clickOnMyAccountLink(MainPage.java:20)
-	at com.ex.ui.SecondSuite.testLoginForm2(SecondSuite.java:10)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /tmp/.com.google.Chrome.QQsaWJ}, goog:chromeOptions: {debuggerAddress: localhost:42945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42945/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eeed7ef943ee4fa98f4547784f9f962a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.ex.ui.pages.WebHelpers.findElement(WebHelpers.java:21)
+	at com.ex.ui.pages.WebHelpers.findElement(WebHelpers.java:16)
+	at com.ex.ui.pages.admin.LoginPage.inputEmail(LoginPage.java:22)
+	at com.ex.ui.SecondSuite.testLoginForm2(SecondSuite.java:12)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
