@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class MainPage extends BasePage {
     private By myAccountLink = By.xpath("//a[contains(text(),'My Account')]");
+    private By acceptCookies = By.xpath("//div[@id='cookiescript_accept']");
 
     public MainPage(WebDriver webDriver) {
         super(webDriver);
@@ -13,6 +14,11 @@ public class MainPage extends BasePage {
 
     public MainPage(WebDriver webDriver, String url) {
         super(webDriver, url);
+    }
+
+    public MainPage clickOnAcceptCookies(){
+        findElement(webDriver,acceptCookies).click();
+        return this;
     }
 
     @Step("Click on my account link step")
