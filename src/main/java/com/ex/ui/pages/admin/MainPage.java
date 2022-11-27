@@ -18,7 +18,12 @@ public class MainPage extends BasePage {
 
     public MainPage clickOnAcceptCookies(){
         waitForElementClickable(webDriver,acceptCookies).click();
-        waitForElementDisappear(acceptCookies, webDriver, 2);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+//        waitForElementDisappear(myAccountLink, webDriver, 2);
         return this;
     }
 
